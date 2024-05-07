@@ -145,8 +145,6 @@ alert("¡Bienvenido al ayudante para juegos de mesa!");
 do {
     menuOption = selectOption("Elija una opción del menú:\n1) Agregar jugadores a la partida\n2) Ver jugadores de la partida\n3) Editar o eliminar jugador de la partida\n4) Generar grupos para la partida\n5) Ver grupos de la partida", 5);
 
-    alert(menuOption)
-
     switch (menuOption) {
         // Opción para agregar jugadores (en cualquier momento de la partida)
         case 1:
@@ -231,6 +229,35 @@ do {
             };
             break
         case 4:
+
+            // Algoritmo para asegurar nivelación de equipos según experiencia (en desarrollo)
+
+            // const list = [4, 2, 3, 3, 1, 4, 3, 2]
+            // let sum = 0;
+            // let n = list.length;
+            // sum = list.reduce((acc, curr) => acc += curr, 0)
+
+            // let found = false;
+            // let lsum = 0;
+            // for (let i = 0; i < n - 1; i++) {
+            //     lsum += list[i];
+            //     let rsum = sum - lsum;
+            //     // If averages of arr[0...i]
+            //     // and arr[i+1..n-1] are same.
+            //     // To avoid floating point problems
+            //     // we compare "lsum(n-i+1)"
+            //     // and "rsum(i+1)" instead of
+            //     // "lsum/(i+1)" and "rsum/(n-i+1)"
+            //     const avgC = Math.abs((lsum / (i + 1)) - (rsum / (n - i))) <= 2
+            //     if (avgC) {
+            //         console.log("From (0 " + i + ") to (" + (i + 1) + " " + (n - 1) + ")\n");
+            //         found = true;
+            //     }
+            // }
+            // // If no subarrays found
+            // if (found == false) console.log('Not found')
+            // alert(`${found} - ${lsum} - ${sum}`)
+
             alert("Opción aún en desarrollo")
             break
         case 5:
@@ -241,6 +268,6 @@ do {
             break
     };
 
-    alert(menuOption)
-
 } while (menuOption !== null);
+
+
